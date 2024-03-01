@@ -1,3 +1,57 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800 */
+@font-face {
+  font-family: whatever;
+  src: url(./fonts/Manrope/static/Manrope-SemiBold.ttf);
+}
+
+
+
+
+.background {
+  height: 100vh;
+  background-color: #1f2632;
+}
+
+.divbox {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 32rem;
+
+  padding: 25px 25px 55px 25px;
+  border-radius: 15px;
+}
+
+.text1 {
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  font-family: whatever;
+  letter-spacing: 3px;
+
+}
+
+.text2 {
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  font-size: 28px;
+  font-family: whatever;
+  font-weight: 800;
+}
+
+.dice:hover {
+  box-shadow: 0 0 30px #52ffa8;
+  opacity: 0.9;
+}
+
+.dice {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100%;
+  padding: 20px;
+
+
+  position: relative;
+  bottom: 35px;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +86,14 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .divbox {
+    max-width: 350px;
   }
 }
